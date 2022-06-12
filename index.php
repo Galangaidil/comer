@@ -2,6 +2,7 @@
 require_once 'components/nav.php';
 $nav = new Nav();
 $products = include_once('data/recommendation.php');
+$fashion = include_once('data/fashion.php');
 ?>
 
 <!doctype html>
@@ -52,20 +53,67 @@ $products = include_once('data/recommendation.php');
         </div>
     </div>
 
+    <!-- Recommendation -->
     <div class="container mt-4 mb-5">
         <div class="row">
             <h4>Rekomendasi produk</h4>
 
             <?php foreach ($products as $product) : ?>
                 <div class="col-lg-3">
-                    <div class="card">
-                        <img src="<?= $product['image'] ?>" class="card-img-top" alt="..." height="400">
-                        <div class="card-body">
-                            <p class="card-text"><?= $product['name'] ?></p>
-                            <strong class="d-block"><?= $product['price'] ?></strong>
-                            <span><i class='bx bxs-star text-warning'></i> <?= $product['rating'] ?> | Terjual <?= $product['sold'] ?>+</span>
+                    <a href="/detail-produk.php" class="text-decoration-none text-black">
+                        <div class="card">
+                            <img src="<?= $product['image'] ?>" class="card-img-top" alt="..." height="400">
+                            <div class="card-body">
+                                <p class="card-text"><?= $product['name'] ?></p>
+                                <strong class="d-block"><?= $product['price'] ?></strong>
+                                <span><i class='bx bxs-star text-warning'></i> <?= $product['rating'] ?> | Terjual <?= $product['sold'] ?>+</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
+            <?php endforeach ?>
+        </div>
+    </div>
+
+    <!-- Fashion Woman -->
+    <div class="container mt-4 mb-5">
+        <div class="row">
+            <h4>Fashion pria</h4>
+
+            <?php foreach ($fashion['woman'] as $product) : ?>
+                <div class="col-lg-3">
+                    <a href="/detail-produk.php" class="text-decoration-none text-black">
+                        <div class="card">
+                            <img src="<?= $product['image'] ?>" class="card-img-top" alt="..." height="400">
+                            <div class="card-body">
+                                <p class="card-text"><?= $product['name'] ?></p>
+                                <strong class="d-block"><?= $product['price'] ?></strong>
+                                <span><i class='bx bxs-star text-warning'></i> <?= $product['rating'] ?> | Terjual <?= $product['sold'] ?>+</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <?php endforeach ?>
+        </div>
+    </div>
+
+    <!-- Fashion Man -->
+    <div class="container mt-4 mb-5">
+        <div class="row">
+            <h4>Fashion pria</h4>
+
+            <?php foreach ($fashion['man'] as $product) : ?>
+                <div class="col-lg-3">
+                    <a href="/detail-produk.php" class="text-decoration-none text-black">
+                        <div class="card">
+                            <img src="<?= $product['image'] ?>" class="card-img-top" alt="..." height="400">
+                            <div class="card-body">
+                                <p class="card-text"><?= $product['name'] ?></p>
+                                <strong class="d-block"><?= $product['price'] ?></strong>
+                                <span><i class='bx bxs-star text-warning'></i> <?= $product['rating'] ?> | Terjual <?= $product['sold'] ?>+</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             <?php endforeach ?>
         </div>
