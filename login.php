@@ -46,7 +46,7 @@
                                         </div>
 
                                         <div class="pt-1 mb-4">
-                                            <button class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                                            <a href="index.php" class="btn btn-dark btn-lg btn-block" type="button">Login</a>
                                         </div>
 
                                         <!-- <a class="small text-muted" href="#!">Forgot password?</a>
