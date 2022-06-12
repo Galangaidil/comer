@@ -33,7 +33,7 @@ $nav = new Nav();
                     <div class="card mb-3" style="border-radius: .5rem;">
                         <div class="row g-0">
                             <div class="col-md-4 gradient-custom text-center text-white" style="border-radius: .5rem; ">
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp" alt="Avatar" class="img-fluid my-5" style="width: 200px;" />
+                                <img src="https://i.ibb.co/586x1j7/ava1-bg.webp" alt="Avatar" class="img-fluid my-5" style="width: 200px;" />
                                 <h4>Samuel</h4>
                                 <p>Member</p>
                                 <i class="far fa-edit mb-5"></i>
