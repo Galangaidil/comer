@@ -1,7 +1,7 @@
 <?php
 
 require_once 'components/nav.php';
-
+$products = include_once('data/recommendation.php');
 $nav = new Nav();
 
 ?>
@@ -31,10 +31,10 @@ $nav = new Nav();
         <div id="produk" class="d-flex">
             <div class="row flex-column flex-md-row">
                 <div class="col-3">
-                    <img class="img-fluid" src="https://static.mercdn.net/item/detail/orig/photos/m13451739216_1.jpg?1643179806" />
+                    <img class="img-fluid rounded" src="<?= $products[0]['image'] ?>" />
                 </div>
                 <div class="col-6">
-                    <h3>Vivienne Westwood Red Label Denim - Size XL</h3>
+                    <h3><?= $products[0]['name'] ?></h3>
                     <div class="rating">
                         <i class='bx bxs-star text-warning'></i>
                         <i class='bx bxs-star text-warning'></i>
@@ -54,7 +54,7 @@ $nav = new Nav();
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card position-sticky top-0" style="width: 15rem;">
                         <div class="card-body">
                             <h5 class="card-title">Beli</h5>
                             <p class="card-text"></p>
@@ -66,17 +66,17 @@ $nav = new Nav();
                 </div>
             </div>
         </div>
-    
+
         <div class="ulasan mt-4">
             <div class="row d-flex">
+                <div class="headings d-flex justify-content-between align-items-center">
+                    <h4>Ulasan Produk</h4>
+                </div>
                 <div class="col-md-9">
-                    <div class="headings d-flex justify-content-between align-items-center mb-3">
-                        <h5>Ulasan Produk</h5>
-                    </div>
                     <div class="card p-3 my-2">
                         <div class="d-flex flex-row">
                             <div class="user d-flex flex-row align-items-center">
-                                <img src="https://i.imgur.com/hczKIze.jpg" width="30" class="user-img rounded-circle mr-2">
+                                <img src="https://api.lorem.space/image/face?hash=33791" width="30" height="30" class="user-img rounded-circle mr-2">
                             </div>
                             <span class="mx-2"><small class="font-weight-bold text-primary">james_olesenn</small></span>
                             <span class="ms-auto"><small>2 hari yang lalu</small></span>
@@ -85,15 +85,15 @@ $nav = new Nav();
                             Produk sangat bagus. Kualitas mantap dan original.
                         </div>
                         <div class="bintang">
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
                         </div>
                     </div>
                     <div class="card p-3 my-2">
                         <div class="d-flex flex-row">
                             <div class="user d-flex flex-row align-items-center">
-                                <img src="https://i.imgur.com/hczKIze.jpg" width="30" class="user-img rounded-circle mr-2">
+                                <img src="https://api.lorem.space/image/face?hash=33791" width="30" height="30" class="user-img rounded-circle mr-2">
                             </div>
                             <span class="mx-2"><small class="font-weight-bold text-primary">james_olesenn</small></span>
                             <span class="ms-auto"><small>2 hari yang lalu</small></span>
@@ -102,16 +102,16 @@ $nav = new Nav();
                             Produk sangat bagus. Kualitas mantap dan original.
                         </div>
                         <div class="bintang">
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
                         </div>
                     </div>
 
                     <div class="card p-3 my-2">
                         <div class="d-flex flex-row">
                             <div class="user d-flex flex-row align-items-center">
-                                <img src="https://i.imgur.com/hczKIze.jpg" width="30" class="user-img rounded-circle mr-2">
+                                <img src="https://api.lorem.space/image/face?hash=33791" width="30" height="30" class="user-img rounded-circle mr-2">
                             </div>
                             <span class="mx-2"><small class="font-weight-bold text-primary">james_olesenn</small></span>
                             <span class="ms-auto"><small>2 hari yang lalu</small></span>
@@ -120,17 +120,17 @@ $nav = new Nav();
                             Produk sangat bagus. Kualitas mantap dan original.
                         </div>
                         <div class="bintang">
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
                         </div>
                     </div>
 
                     <div class="card p-3 my-2">
                         <div class="d-flex flex-row">
                             <div class="user d-flex flex-row align-items-center">
-                                <img src="https://i.imgur.com/hczKIze.jpg" width="30" class="user-img rounded-circle mr-2">
+                                <img src="https://api.lorem.space/image/face?hash=33791" width="30" height="30" class="user-img rounded-circle mr-2">
                             </div>
                             <span class="mx-2"><small class="font-weight-bold text-primary">james_olesenn</small></span>
                             <span class="ms-auto"><small>2 hari yang lalu</small></span>
@@ -139,21 +139,77 @@ $nav = new Nav();
                             Produk sangat bagus. Kualitas mantap dan original.
                         </div>
                         <div class="bintang">
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
+                            <i class='bx bxs-star text-warning'></i>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card my-2 position-sticky top-0" style="width: 15rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rating</h5>
+                            <p class="card-text"></p>
+                            <div class="">
+                                <i class='bx bxs-star text-warning'></i>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i>
+                                
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i>
+                                
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i>
+                                
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                                </div>
+                            </div>
 
-                    
+
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
 
-        <div class="rekomendasi">
+        <div class="rekomendasi my-2 mt-4">
 
-        
+            <div class="row">
+                <h4>Rekomendasi produk</h4>
+
+                <?php foreach ($products as $product) : ?>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="<?= $product['image'] ?>" class="card-img-top" alt="..." height="400">
+                            <div class="card-body">
+                                <p class="card-text"><?= $product['name'] ?></p>
+                                <strong class="d-block"><?= $product['price'] ?></strong>
+                                <span><i class='bx bxs-star text-warning'></i> <?= $product['rating'] ?> | Terjual <?= $product['sold'] ?>+</span>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach ?>
+            </div>
         </div>
 
     </div>
