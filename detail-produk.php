@@ -164,21 +164,21 @@ $nav = new Nav();
                             </div>
                             <div class="">
                                 <i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i>
-                                
+
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
                                 </div>
                             </div>
                             <div class="">
                                 <i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i>
-                                
+
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
                                 </div>
                             </div>
                             <div class="">
                                 <i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i><i class='bx bxs-star text-warning'></i>
-                                
+
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
                                 </div>
@@ -192,7 +192,7 @@ $nav = new Nav();
             </div>
         </div>
 
-        <div class="rekomendasi my-2 mt-4">
+        <div class="rekomendasi my-2 mt-4 mb-4">
 
             <div class="row">
                 <h4>Rekomendasi produk</h4>
@@ -213,6 +213,8 @@ $nav = new Nav();
         </div>
 
     </div>
+
+    <?= $nav->footer() ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
