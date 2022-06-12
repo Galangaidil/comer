@@ -1,7 +1,7 @@
 <?php
 require_once 'components/nav.php';
-
 $nav = new Nav();
+$products = include_once('data/recommendation.php');
 ?>
 
 <!doctype html>
@@ -49,6 +49,25 @@ $nav = new Nav();
                     </button>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-5">
+        <div class="row">
+            <h4>Rekomendasi produk</h4>
+
+            <?php foreach ($products as $product) : ?>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="<?= $product['image'] ?>" class="card-img-top" alt="..." height="400">
+                        <div class="card-body">
+                            <p class="card-text"><?= $product['name'] ?></p>
+                            <strong class="d-block"><?= $product['price'] ?></strong>
+                            <span><i class='bx bxs-star text-warning'></i> <?= $product['rating'] ?> | Terjual <?= $product['sold'] ?>+</span>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach ?>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
