@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Produk</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -63,14 +65,30 @@
                     <img class="img-fluid" src="https://static.mercdn.net/item/detail/orig/photos/m13451739216_1.jpg?1643179806" />
                 </div>
                 <div class="col-6">
-                    <h3>Vivienne Westwood Red Label Denim</h3>
+                    <h3>Vivienne Westwood Red Label Denim - Size XL</h3>
+                    <div class="rating">
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star-half text-warning'></i><span class="mx-2">4.5 (65 ulasan)</span>
+                    </div>
+                    <div class="harga">
+                        <span class="badge rounded-pill text-bg-danger">Diskon 20%</span>
+                        <span><del>Rp. 540.000</del></span>
+                        <div>
+                            <h4 class="text-warning">Rp. 430.000</h4>
+                        </div>
+                        
+                    </div>
                     <hr>
+                    <div class="deskripsi">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odio, voluptas, fuga omnis quo vel dignissimos enim totam dolore ullam a. Odio, aut sapiente voluptatem aliquam maxime iure incidunt libero. Corporis nostrum iste a odit maxime, fugiat architecto. Mollitia repudiandae tenetur, temporibus accusantium voluptas ab, omnis error, laborum amet nam quas pariatur modi nulla rerum. Possimus, sint deleniti temporibus quia saepe officia quasi debitis libero exercitationem, quae dignissimos facilis, recusandae minus eum placeat odio? Quae nisi dolor, soluta cumque corporis harum laborum nihil dolores nobis illum delectus quo itaque quam veritatis deleniti voluptates, quas distinctio consectetur vitae quisquam beatae excepturi!
+                    
+                    <hr>
+
                 </div>
             </div>
-
-
-            
-
         </div>
     </div>
 
