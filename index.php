@@ -24,7 +24,7 @@ $accecories = include_once('data/accessories.php');
     <div class="container mt-4">
         <div class="row">
             <div class="col-lg-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div id="carousel" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -61,7 +61,7 @@ $accecories = include_once('data/accessories.php');
 
             <?php foreach ($products as $product) : ?>
                 <div class="col-lg-3">
-                    <a href="/detail-produk.php" class="text-decoration-none text-black">
+                    <a href="./detail-produk.php" class="text-decoration-none text-black">
                         <div class="card">
                             <img src="<?= $product['image'] ?>" class="card-img-top" alt="..." height="400">
                             <div class="card-body">
@@ -83,7 +83,7 @@ $accecories = include_once('data/accessories.php');
 
             <?php foreach ($fashion['woman'] as $product) : ?>
                 <div class="col-lg-3">
-                    <a href="/detail-produk.php" class="text-decoration-none text-black">
+                    <a href="./detail-produk.php" class="text-decoration-none text-black">
                         <div class="card">
                             <img src="<?= $product['image'] ?>" class="card-img-top" alt="..." height="400">
                             <div class="card-body">
@@ -105,7 +105,7 @@ $accecories = include_once('data/accessories.php');
 
             <?php foreach ($fashion['man'] as $product) : ?>
                 <div class="col-lg-3">
-                    <a href="/detail-produk.php" class="text-decoration-none text-black">
+                    <a href="./detail-produk.php" class="text-decoration-none text-black">
                         <div class="card">
                             <img src="<?= $product['image'] ?>" class="card-img-top" alt="..." height="400">
                             <div class="card-body">
@@ -127,7 +127,7 @@ $accecories = include_once('data/accessories.php');
 
             <?php foreach ($accecories['computer'] as $product) : ?>
                 <div class="col-lg-3">
-                    <a href="/detail-produk.php" class="text-decoration-none text-black">
+                    <a href="./detail-produk.php" class="text-decoration-none text-black">
                         <div class="card">
                             <img src="<?= $product['image'] ?>" class="card-img-top" alt="..." height="400">
                             <div class="card-body">

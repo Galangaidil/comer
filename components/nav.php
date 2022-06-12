@@ -8,7 +8,7 @@ class Nav
         return '
             <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
-            <a class="navbar-brand" href="/">Janapedia</a>
+            <a class="navbar-brand" href="./">Janapedia</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,10 +22,9 @@ class Nav
                     </form>
                 </div>
                 <div class="d-flex align-items-center gap-2">
-                    <a href="/cart.php" class="ms-3 dropdown-item">
+                    <a href="./cart.php" class="ms-3 dropdown-item">
                         <i class="bx bx-cart"></i>
                     </a>
-
                     <div class="btn-group">
                         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bx bxs-user"></i>
@@ -34,12 +33,12 @@ class Nav
                             <li>
                                 <h6 class="dropdown-header">Informasi akun</h6>
                             </li>
-                            <li><a href="/profile.php" class="dropdown-item">Samuel</a></li>
+                            <li><a href="./profile.php" class="dropdown-item">Samuel</a></li>
                             <li><button class="dropdown-item" type="button">Settings</button></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a href="/login.php" class="dropdown-item">Log out</a></li>
+                            <li><a href="./login.php" class="dropdown-item">Log out</a></li>
                         </ul>
                     </div>
                 </div>
