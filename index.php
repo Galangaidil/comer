@@ -3,6 +3,7 @@ require_once 'components/nav.php';
 $nav = new Nav();
 $products = include_once('data/recommendation.php');
 $fashion = include_once('data/fashion.php');
+$accecories = include_once('data/accessories.php');
 ?>
 
 <!doctype html>
@@ -78,7 +79,7 @@ $fashion = include_once('data/fashion.php');
     <!-- Fashion Woman -->
     <div class="container mt-4 mb-5">
         <div class="row">
-            <h4>Fashion pria</h4>
+            <h4>Fashion wanita</h4>
 
             <?php foreach ($fashion['woman'] as $product) : ?>
                 <div class="col-lg-3">
@@ -118,6 +119,30 @@ $fashion = include_once('data/fashion.php');
             <?php endforeach ?>
         </div>
     </div>
+
+    <!-- Accecories Computer -->
+    <div class="container mt-4 mb-5">
+        <div class="row">
+            <h4>Aksesoris komputer</h4>
+
+            <?php foreach ($accecories['computer'] as $product) : ?>
+                <div class="col-lg-3">
+                    <a href="/detail-produk.php" class="text-decoration-none text-black">
+                        <div class="card">
+                            <img src="<?= $product['image'] ?>" class="card-img-top" alt="..." height="400">
+                            <div class="card-body">
+                                <p class="card-text"><?= $product['name'] ?></p>
+                                <strong class="d-block"><?= $product['price'] ?></strong>
+                                <span><i class='bx bxs-star text-warning'></i> <?= $product['rating'] ?> | Terjual <?= $product['sold'] ?>+</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <?php endforeach ?>
+        </div>
+    </div>
+
+    <?= $nav->footer() ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
