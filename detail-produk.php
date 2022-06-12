@@ -54,7 +54,7 @@ $nav = new Nav();
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card position-sticky top-0" style="width: 15rem;">
+                    <div class="card position-sticky" style="width: 15rem; top: 4px">
                         <div class="card-body">
                             <h5 class="card-title">Beli</h5>
                             <p class="card-text"></p>
@@ -146,7 +146,7 @@ $nav = new Nav();
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card my-2 position-sticky top-0" style="width: 15rem;">
+                    <div class="card my-2 position-sticky" style="width: 15rem; top: 4px">
                         <div class="card-body">
                             <h5 class="card-title">Rating</h5>
                             <p class="card-text"></p>
